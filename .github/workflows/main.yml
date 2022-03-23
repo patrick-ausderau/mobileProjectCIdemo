@@ -28,7 +28,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: create a folder
         run: mkdir demo
-        
+
       - name: create a file with some text in demo folder
         run: |
           cd demo
@@ -42,10 +42,9 @@ jobs:
           echo test, and deploy your project.
           pwd
           ls -alh
-          
+
       - name: use the upload Artifact GitHub Action
         uses: actions/upload-artifact@v3.0.0
-        with: 
+        with:
           name: assets-for-download
           path: demo
-          
